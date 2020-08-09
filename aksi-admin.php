@@ -5,6 +5,7 @@ $id='';
 $name='';
 $stok='';
 
+// tambah
 if (isset($_POST['save'])) {
 	$id=$_POST['id'];
 	$nm_barang= $_POST['nm_barang'];
@@ -24,6 +25,7 @@ if (isset($_POST['save'])) {
 	}
 }
 
+// hapus
 if (isset($_GET['delete'])) {
 	$id= $_GET['delete'];
 
@@ -41,6 +43,8 @@ if (isset($_GET['delete'])) {
 	}
 }
 
+
+// edit
 if (isset($_GET['edit'])) {
 	$id= $_GET['edit'];
 	$update=true;
@@ -57,6 +61,8 @@ if (isset($_GET['edit'])) {
 	$stok=$row['stok'];
 }
  
+
+// update
 if (isset($_POST['update'])) {
 	$id=$_POST['id'];
 	$nm_barang=$_POST['nm_barang'];
