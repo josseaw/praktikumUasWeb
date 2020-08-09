@@ -24,6 +24,8 @@
 			<td>Nama Barang</td>
 			<td>Berat Barang (Kg)</td>
 		</tr>
+
+		<!-- dimulainya connection -->
 		<?php  
 		include 'connection.php';
 		$no = 1;
